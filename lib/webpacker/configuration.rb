@@ -21,7 +21,7 @@ class Webpacker::Configuration < Webpacker::FileLoader
     end
 
     def output_path
-      Rails.root.join(paths.fetch(:output, "public"), paths.fetch(:entry, "packs"))
+      Rails.root.join(paths.fetch(:output, "public"))
     end
 
     def paths
